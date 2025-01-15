@@ -1,24 +1,16 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package fichasdesarrollo;
+package cadenas;
 
 /**
  *
- * @author user
+ * @author Usuario
  */
-public class FichasDesarrollo {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-      var  a1 = "   hol";
-        System.out.println(validateString(a1));
-    }
+public class Cadenas {
     
-    public static String validateString(String input) {
+     public static String validateString(String input) {
   // Verificar si la cadena es nula o vacía
         if (input == null || input.isEmpty()) {
             return null; // Devolver null para indicar que la cadena no es válida
@@ -34,5 +26,7 @@ public class FichasDesarrollo {
 
         return input; // Devolver la cadena válida
     }
+    
+    
     
 }

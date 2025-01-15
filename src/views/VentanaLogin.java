@@ -7,12 +7,15 @@ package views;
 import capacitacion.views.*;
 import java.awt.Image;
 import javax.swing.ImageIcon;
+import static cadenas.Cadenas.validateString;
+import javax.swing.JOptionPane;
 
 /**
  *
  * @author user
  */
 public class VentanaLogin extends javax.swing.JDialog {
+
     String rutaimagen = "C://FichaMedica//img//persona.png";
 
     /**
@@ -23,8 +26,9 @@ public class VentanaLogin extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         cargarImagen();
+        this.OCULTAR.setVisible(false);
     }
-    
+
     private void cargarImagen() {
 
         String file = rutaimagen;
@@ -34,7 +38,7 @@ public class VentanaLogin extends javax.swing.JDialog {
         Image newimg = img.getScaledInstance(350, 350, java.awt.Image.SCALE_SMOOTH);
         ImageIcon newIcono = new ImageIcon(newimg);
         personita.setIcon(newIcono);
-        personita.setSize(200, 200);      
+        personita.setSize(200, 200);
     }
 
     /**
@@ -63,6 +67,8 @@ public class VentanaLogin extends javax.swing.JDialog {
         password1 = new javax.swing.JPasswordField();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        VER = new javax.swing.JLabel();
+        OCULTAR = new javax.swing.JLabel();
         personita = new javax.swing.JLabel();
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
@@ -102,22 +108,47 @@ public class VentanaLogin extends javax.swing.JDialog {
         jLabel5.setFont(new java.awt.Font("Microsoft Tai Le", 0, 24)); // NOI18N
         jLabel5.setText("Usuario");
 
+        usuario1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         usuario1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jLabel6.setFont(new java.awt.Font("Microsoft Tai Le", 0, 24)); // NOI18N
         jLabel6.setText("Password");
 
+        password1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         password1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
 
         jButton3.setBackground(new java.awt.Color(192, 220, 228));
         jButton3.setFont(new java.awt.Font("Microsoft Tai Le", 1, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\aceptar.png")); // NOI18N
         jButton3.setText("Aceptar");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
 
         jButton4.setBackground(new java.awt.Color(192, 219, 226));
         jButton4.setFont(new java.awt.Font("Microsoft Tai Le", 1, 14)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\cancelar.png")); // NOI18N
         jButton4.setText("Cancelar");
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+
+        VER.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\ver_32px.png")); // NOI18N
+        VER.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                VERMouseClicked(evt);
+            }
+        });
+
+        OCULTAR.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\ocultar_32px.png")); // NOI18N
+        OCULTAR.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        OCULTAR.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                OCULTARMouseClicked(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -127,21 +158,27 @@ public class VentanaLogin extends javax.swing.JDialog {
                 .addContainerGap(21, Short.MAX_VALUE)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(usuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(32, 32, 32))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel5)
+                        .addGap(97, 97, 97))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jButton4)
                         .addGap(21, 21, 21))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(91, 91, 91))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(password1, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(usuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(password1, javax.swing.GroupLayout.PREFERRED_SIZE, 218, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(32, 32, 32))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel5)
-                        .addGap(97, 97, 97))))
+                            .addComponent(VER, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(OCULTAR))
+                        .addContainerGap())))
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(74, 74, 74)
+                .addComponent(jLabel6)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -150,18 +187,21 @@ public class VentanaLogin extends javax.swing.JDialog {
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(usuario1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(67, 67, 67)
+                .addGap(61, 61, 61)
                 .addComponent(jLabel6)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(password1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(60, 60, 60)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addComponent(password1, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(76, 76, 76)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(VER, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(OCULTAR))
                 .addGap(18, 18, 18))
         );
 
-        personita.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\persona.png")); // NOI18N
         personita.setText("jLabel7");
 
         javax.swing.GroupLayout panelLayout = new javax.swing.GroupLayout(panel);
@@ -185,7 +225,7 @@ public class VentanaLogin extends javax.swing.JDialog {
                     .addGroup(panelLayout.createSequentialGroup()
                         .addGap(27, 27, 27)
                         .addComponent(personita, javax.swing.GroupLayout.PREFERRED_SIZE, 427, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(29, Short.MAX_VALUE))
+                .addContainerGap(13, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -203,8 +243,65 @@ public class VentanaLogin extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
     private void jToggleButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jToggleButton1ActionPerformed
-       
+
     }//GEN-LAST:event_jToggleButton1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        var a = validar();
+        if (!"".equals(a)) {
+            JOptionPane.showMessageDialog(null, a);
+        }
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void VERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VERMouseClicked
+        VER.setVisible(false);
+        OCULTAR.setVisible(true);
+        password1.setEchoChar((char)0);
+    }//GEN-LAST:event_VERMouseClicked
+
+    private void OCULTARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OCULTARMouseClicked
+        VER.setVisible(true);
+        OCULTAR.setVisible(false);
+        password1.setEchoChar('●');
+    }//GEN-LAST:event_OCULTARMouseClicked
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private String validar() {
+        int c = 0;
+        StringBuilder err = new StringBuilder();
+
+        // Validar usuario
+        var var1 = validateString(usuario1.getText());
+        if (var1 == null) {
+            err.append("Usuario");
+            c++;
+        } else {
+            usuario1.setText(var1);
+        }
+
+        // Validar contraseña
+        var var2 = validateString(password1.getText());
+        if (var2 == null) {
+            if (c > 0) {
+                err.append(" y ");
+            }
+            err.append("Password");
+            c++;
+        } else {
+            password1.setText(var2);
+        }
+
+        // Añadir mensaje final dependiendo de errores
+        if (c > 0) {
+            err.append(c > 1 ? " incorrectos!" : " incorrecto!");
+        }
+
+        System.out.println(err.toString());
+        return err.toString();
+    }
 
     /**
      * @param args the command line arguments
@@ -250,6 +347,8 @@ public class VentanaLogin extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel OCULTAR;
+    private javax.swing.JLabel VER;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
