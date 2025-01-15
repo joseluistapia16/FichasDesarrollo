@@ -28,6 +28,7 @@ public class VentanaLogin extends javax.swing.JDialog {
         setLocationRelativeTo(null);
         cargarImagen();
         this.OCULTAR.setVisible(false);
+
     }
 
     private void cargarImagen() {
@@ -255,10 +256,10 @@ public class VentanaLogin extends javax.swing.JDialog {
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         var a = validar();
         if (!"".equals(a)) {
-          
-            if ("Sofia25".equals(usuario1.getText())  && "1234".equals(password1.getText())) {
-                  setVisible(false);
-                new Menu(new JFrame(),true).setVisible(true);
+
+            if ("Sofia25".equals(usuario1.getText()) && "1234".equals(password1.getText())) {
+                setVisible(false);
+                new Menu(new JFrame(), true).setVisible(true);
             }
             JOptionPane.showMessageDialog(null, a);
         }
@@ -267,7 +268,7 @@ public class VentanaLogin extends javax.swing.JDialog {
     private void VERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_VERMouseClicked
         VER.setVisible(false);
         OCULTAR.setVisible(true);
-        password1.setEchoChar((char)0);
+        password1.setEchoChar((char) 0);
     }//GEN-LAST:event_VERMouseClicked
 
     private void OCULTARMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_OCULTARMouseClicked
