@@ -112,6 +112,16 @@ public class VentanaLogin extends javax.swing.JDialog {
 
         usuario1.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
         usuario1.setBorder(javax.swing.BorderFactory.createEtchedBorder());
+        usuario1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                usuario1ActionPerformed(evt);
+            }
+        });
+        usuario1.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                usuario1KeyPressed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Microsoft Tai Le", 0, 24)); // NOI18N
         jLabel6.setText("Password");
@@ -121,7 +131,6 @@ public class VentanaLogin extends javax.swing.JDialog {
 
         jButton3.setBackground(new java.awt.Color(192, 220, 228));
         jButton3.setFont(new java.awt.Font("Microsoft Tai Le", 1, 14)); // NOI18N
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\aceptar.png")); // NOI18N
         jButton3.setText("Aceptar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -131,7 +140,6 @@ public class VentanaLogin extends javax.swing.JDialog {
 
         jButton4.setBackground(new java.awt.Color(192, 219, 226));
         jButton4.setFont(new java.awt.Font("Microsoft Tai Le", 1, 14)); // NOI18N
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\cancelar.png")); // NOI18N
         jButton4.setText("Cancelar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -139,14 +147,12 @@ public class VentanaLogin extends javax.swing.JDialog {
             }
         });
 
-        VER.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\ver_32px.png")); // NOI18N
         VER.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 VERMouseClicked(evt);
             }
         });
 
-        OCULTAR.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\ocultar_32px.png")); // NOI18N
         OCULTAR.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
         OCULTAR.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -280,6 +286,14 @@ public class VentanaLogin extends javax.swing.JDialog {
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         setVisible(false);
     }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void usuario1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_usuario1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuario1ActionPerformed
+
+    private void usuario1KeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_usuario1KeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_usuario1KeyPressed
 
     private String validar() {
         int c = 0;

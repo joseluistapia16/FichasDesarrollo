@@ -4,19 +4,21 @@
  */
 package views;
 
+import static cadenas.Cadenas.validateString;
 import java.awt.Image;
 import javax.swing.ImageIcon;
 
 /**
  *
- * @Corregido  14 : 01 2025
- * cambio final
+ * @Corregido 14 : 01 2025 cambio final
  */
 public class Fichas extends javax.swing.JDialog {
+
     String rutaimagen = "C://FichaMedica//img//logofoto.png";
 
     /**
      * Creates new form Fichas
+     *
      * @param parent
      * @param modal
      */
@@ -24,11 +26,11 @@ public class Fichas extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-        setSize(797, 700); 
+        setSize(797, 700);
         cargarImagen();
-        
-        
+
     }
+
     private void cargarImagen() {
 
         String file = rutaimagen;
@@ -38,7 +40,7 @@ public class Fichas extends javax.swing.JDialog {
         Image newimg = img.getScaledInstance(270, 270, java.awt.Image.SCALE_SMOOTH);
         ImageIcon newIcono = new ImageIcon(newimg);
         icono.setIcon(newIcono);
-        icono.setSize(200, 200);      
+        icono.setSize(200, 200);
     }
 
     /**
@@ -50,6 +52,50 @@ public class Fichas extends javax.swing.JDialog {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel22 = new javax.swing.JLabel();
+        F_CARDIACA4 = new javax.swing.JTextField();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        F_CARDIACA3 = new javax.swing.JTextField();
+        jLabel19 = new javax.swing.JLabel();
+        F_CARDIACA2 = new javax.swing.JTextField();
+        jLabel33 = new javax.swing.JLabel();
+        jLabel18 = new javax.swing.JLabel();
+        F_CARDIACA = new javax.swing.JTextField();
+        jLabel20 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        F_CARDIACA1 = new javax.swing.JTextField();
+        jLabel23 = new javax.swing.JLabel();
+        F_CARDIACA5 = new javax.swing.JTextField();
+        jLabel21 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        F_CARDIACA7 = new javax.swing.JTextField();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        F_CARDIACA6 = new javax.swing.JTextField();
+        jLabel40 = new javax.swing.JLabel();
+        jLabel41 = new javax.swing.JLabel();
+        F_CARDIACA8 = new javax.swing.JTextField();
+        jLabel42 = new javax.swing.JLabel();
+        F_CARDIACA9 = new javax.swing.JTextField();
+        jLabel43 = new javax.swing.JLabel();
+        jLabel44 = new javax.swing.JLabel();
+        F_CARDIACA10 = new javax.swing.JTextField();
+        jLabel45 = new javax.swing.JLabel();
+        jLabel46 = new javax.swing.JLabel();
+        jLabel47 = new javax.swing.JLabel();
+        F_CARDIACA11 = new javax.swing.JTextField();
+        jLabel48 = new javax.swing.JLabel();
+        F_CARDIACA12 = new javax.swing.JTextField();
+        jLabel49 = new javax.swing.JLabel();
+        jLabel50 = new javax.swing.JLabel();
+        jLabel51 = new javax.swing.JLabel();
+        F_CARDIACA13 = new javax.swing.JTextField();
+        jLabel52 = new javax.swing.JLabel();
+        jButton9 = new javax.swing.JButton();
+        jButton7 = new javax.swing.JButton();
         jTabbedPane4 = new javax.swing.JTabbedPane();
         jPanel1 = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
@@ -76,6 +122,8 @@ public class Fichas extends javax.swing.JDialog {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jComboBox1 = new javax.swing.JComboBox<>();
+        jLabel25 = new javax.swing.JLabel();
+        jComboBox2 = new javax.swing.JComboBox<>();
         jPanel2 = new javax.swing.JPanel();
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
@@ -92,25 +140,245 @@ public class Fichas extends javax.swing.JDialog {
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jPanel3 = new javax.swing.JPanel();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        jLabel24 = new javax.swing.JLabel();
-        F_CARDIACA = new javax.swing.JTextField();
-        SATURCION = new javax.swing.JTextField();
-        P_ARTERIAL = new javax.swing.JTextField();
-        PESO = new javax.swing.JTextField();
-        ESTATURA = new javax.swing.JTextField();
-        TEMPERATURA = new javax.swing.JTextField();
-        IMC = new javax.swing.JTextField();
-        jLabel25 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel9 = new javax.swing.JLabel();
         jLabel28 = new javax.swing.JLabel();
         jLabel29 = new javax.swing.JLabel();
+        jLabel53 = new javax.swing.JLabel();
+        F_CARDIACA14 = new javax.swing.JTextField();
+        jLabel54 = new javax.swing.JLabel();
+        jLabel55 = new javax.swing.JLabel();
+        F_CARDIACA15 = new javax.swing.JTextField();
+        jLabel56 = new javax.swing.JLabel();
+        F_CARDIACA16 = new javax.swing.JTextField();
+        jLabel57 = new javax.swing.JLabel();
+        jLabel58 = new javax.swing.JLabel();
+        F_CARDIACA17 = new javax.swing.JTextField();
+        jLabel59 = new javax.swing.JLabel();
+        jLabel60 = new javax.swing.JLabel();
+        jLabel61 = new javax.swing.JLabel();
+        F_CARDIACA18 = new javax.swing.JTextField();
+        jLabel62 = new javax.swing.JLabel();
+        F_CARDIACA19 = new javax.swing.JTextField();
+        jLabel63 = new javax.swing.JLabel();
+        jLabel64 = new javax.swing.JLabel();
+        jLabel65 = new javax.swing.JLabel();
+        F_CARDIACA20 = new javax.swing.JTextField();
+        jLabel66 = new javax.swing.JLabel();
+        jButton6 = new javax.swing.JButton();
+        jButton11 = new javax.swing.JButton();
+
+        jLabel22.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel22.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (3).png"))); // NOI18N
+
+        F_CARDIACA4.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA4ActionPerformed(evt);
+            }
+        });
+
+        jLabel35.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel35.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel35.setText("PESO (KG)");
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (1).png"))); // NOI18N
+
+        F_CARDIACA3.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA3ActionPerformed(evt);
+            }
+        });
+
+        jLabel19.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel19.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel19.setText("FRECUANCIA CARDIACA");
+        jLabel19.setDoubleBuffered(true);
+
+        F_CARDIACA2.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA2ActionPerformed(evt);
+            }
+        });
+
+        jLabel33.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file.png"))); // NOI18N
+        jLabel33.setText("jLabel9");
+
+        jLabel18.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel18.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel18.setText("PRESION ARTERIAL");
+
+        F_CARDIACA.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACAActionPerformed(evt);
+            }
+        });
+
+        jLabel20.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel20.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel20.setText("SATURACION ");
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (2).png"))); // NOI18N
+
+        jLabel36.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (5).png"))); // NOI18N
+
+        F_CARDIACA1.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA1ActionPerformed(evt);
+            }
+        });
+
+        jLabel23.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel23.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel23.setText("TEMPERATURA");
+
+        F_CARDIACA5.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA5ActionPerformed(evt);
+            }
+        });
+
+        jLabel21.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel21.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (4).png"))); // NOI18N
+
+        jLabel37.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel37.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel37.setText("ESTATURA (CM)");
+
+        jLabel24.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel24.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (6).png"))); // NOI18N
+
+        F_CARDIACA7.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA7ActionPerformed(evt);
+            }
+        });
+
+        jLabel38.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel38.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel38.setText("IMC");
+
+        jLabel39.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (3).png"))); // NOI18N
+
+        F_CARDIACA6.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA6ActionPerformed(evt);
+            }
+        });
+
+        jLabel40.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel40.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel40.setText("PESO (KG)");
+
+        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (1).png"))); // NOI18N
+
+        F_CARDIACA8.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA8.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA8ActionPerformed(evt);
+            }
+        });
+
+        jLabel42.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel42.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel42.setText("FRECUANCIA CARDIACA");
+        jLabel42.setDoubleBuffered(true);
+
+        F_CARDIACA9.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA9ActionPerformed(evt);
+            }
+        });
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file.png"))); // NOI18N
+        jLabel43.setText("jLabel9");
+
+        jLabel44.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel44.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel44.setText("PRESION ARTERIAL");
+
+        F_CARDIACA10.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA10.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA10ActionPerformed(evt);
+            }
+        });
+
+        jLabel45.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel45.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel45.setText("SATURACION ");
+
+        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (2).png"))); // NOI18N
+
+        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (5).png"))); // NOI18N
+
+        F_CARDIACA11.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA11ActionPerformed(evt);
+            }
+        });
+
+        jLabel48.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel48.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel48.setText("TEMPERATURA");
+
+        F_CARDIACA12.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA12.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA12ActionPerformed(evt);
+            }
+        });
+
+        jLabel49.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (4).png"))); // NOI18N
+
+        jLabel50.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel50.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel50.setText("ESTATURA (CM)");
+
+        jLabel51.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (6).png"))); // NOI18N
+
+        F_CARDIACA13.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA13.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA13ActionPerformed(evt);
+            }
+        });
+
+        jLabel52.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel52.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel52.setText("IMC");
+
+        jButton9.setBackground(new java.awt.Color(0, 153, 204));
+        jButton9.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        jButton9.setForeground(new java.awt.Color(255, 255, 255));
+        jButton9.setText("Eliminar");
+        jButton9.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton9ActionPerformed(evt);
+            }
+        });
+
+        jButton7.setBackground(new java.awt.Color(0, 153, 204));
+        jButton7.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        jButton7.setForeground(new java.awt.Color(255, 255, 255));
+        jButton7.setText("Guardar");
+        jButton7.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton7ActionPerformed(evt);
+            }
+        });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setUndecorated(true);
@@ -154,6 +422,14 @@ public class Fichas extends javax.swing.JDialog {
                 TXT_NOMBREActionPerformed(evt);
             }
         });
+        TXT_NOMBRE.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                TXT_NOMBREKeyPressed(evt);
+            }
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_NOMBREKeyReleased(evt);
+            }
+        });
 
         TXT_APELLIDO.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
         TXT_APELLIDO.addActionListener(new java.awt.event.ActionListener() {
@@ -161,12 +437,27 @@ public class Fichas extends javax.swing.JDialog {
                 TXT_APELLIDOActionPerformed(evt);
             }
         });
+        TXT_APELLIDO.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_APELLIDOKeyReleased(evt);
+            }
+        });
 
         TXT_F_NACIMIENTO.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
 
         TXT_L_NACIMIENTO.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
+        TXT_L_NACIMIENTO.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_L_NACIMIENTOKeyReleased(evt);
+            }
+        });
 
         TXT_N_HIJOS.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
+        TXT_N_HIJOS.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                TXT_N_HIJOSActionPerformed(evt);
+            }
+        });
 
         TXT_DIRECCION.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
         TXT_DIRECCION.addActionListener(new java.awt.event.ActionListener() {
@@ -174,11 +465,21 @@ public class Fichas extends javax.swing.JDialog {
                 TXT_DIRECCIONActionPerformed(evt);
             }
         });
+        TXT_DIRECCION.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_DIRECCIONKeyReleased(evt);
+            }
+        });
 
         TXT_TELEFONO.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(204, 204, 204), 2, true));
         TXT_TELEFONO.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TXT_TELEFONOActionPerformed(evt);
+            }
+        });
+        TXT_TELEFONO.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_TELEFONOKeyReleased(evt);
             }
         });
 
@@ -190,6 +491,11 @@ public class Fichas extends javax.swing.JDialog {
         TXT_CEDULA.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 TXT_CEDULAActionPerformed(evt);
+            }
+        });
+        TXT_CEDULA.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                TXT_CEDULAKeyReleased(evt);
             }
         });
 
@@ -206,7 +512,6 @@ public class Fichas extends javax.swing.JDialog {
         jLabel31.setText("NACIMIENTO");
 
         icono.setBackground(new java.awt.Color(255, 255, 255));
-        icono.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\logofoto.png")); // NOI18N
         icono.setBorder(new javax.swing.border.SoftBevelBorder(javax.swing.border.BevelBorder.RAISED));
 
         jButton1.setBackground(new java.awt.Color(106, 176, 193));
@@ -216,7 +521,6 @@ public class Fichas extends javax.swing.JDialog {
         jButton2.setBackground(new java.awt.Color(0, 153, 204));
         jButton2.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
-        jButton2.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\ic_grabar.png")); // NOI18N
         jButton2.setText("Guardar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -227,7 +531,6 @@ public class Fichas extends javax.swing.JDialog {
         jButton3.setBackground(new java.awt.Color(0, 153, 204));
         jButton3.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
-        jButton3.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\cancelar.png")); // NOI18N
         jButton3.setText("Cancelar");
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -239,6 +542,17 @@ public class Fichas extends javax.swing.JDialog {
         jComboBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jComboBox1ActionPerformed(evt);
+            }
+        });
+
+        jLabel25.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel25.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel25.setText("Correo");
+
+        jComboBox2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Escoger", "Casado", "Divorciado", "Soltero" }));
+        jComboBox2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jComboBox2ActionPerformed(evt);
             }
         });
 
@@ -258,14 +572,16 @@ public class Fichas extends javax.swing.JDialog {
                                 .addComponent(TXT_CEDULA, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel2)))
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(46, 46, 46)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jLabel31)
-                            .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel5)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(20, 20, 20)))
+                                .addGap(46, 46, 46)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel31)
+                                    .addComponent(jLabel30, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel5)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(71, 71, 71)
+                                .addComponent(jLabel6)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
                         .addComponent(TXT_N_HIJOS, javax.swing.GroupLayout.PREFERRED_SIZE, 188, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
@@ -305,6 +621,16 @@ public class Fichas extends javax.swing.JDialog {
                             .addComponent(icono, javax.swing.GroupLayout.PREFERRED_SIZE, 283, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addContainerGap())))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(60, 60, 60)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(633, Short.MAX_VALUE)))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(177, 177, 177)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(413, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -319,7 +645,7 @@ public class Fichas extends javax.swing.JDialog {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(TXT_DIRECCION, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
                             .addComponent(jLabel27))
-                        .addGap(115, 115, 115))
+                        .addGap(124, 124, 124))
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(41, 41, 41)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -352,17 +678,32 @@ public class Fichas extends javax.swing.JDialog {
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel5)
                             .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(34, 34, 34)
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(TXT_N_HIJOS, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel6)
-                            .addComponent(jLabel8)
-                            .addComponent(TXT_TELEFONO, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(9, 9, 9)
+                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addGap(46, 46, 46)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel8)
+                                    .addComponent(TXT_TELEFONO, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel1Layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(TXT_N_HIJOS, javax.swing.GroupLayout.DEFAULT_SIZE, 44, Short.MAX_VALUE)
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addGap(19, 19, 19)))
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap())
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                    .addContainerGap(500, Short.MAX_VALUE)
+                    .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 53, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(390, 390, 390)))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(506, 506, 506)
+                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(393, Short.MAX_VALUE)))
         );
 
         jTabbedPane4.addTab("DATOS ", jPanel1);
@@ -437,7 +778,6 @@ public class Fichas extends javax.swing.JDialog {
         jButton4.setBackground(new java.awt.Color(0, 153, 204));
         jButton4.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
         jButton4.setForeground(new java.awt.Color(255, 255, 255));
-        jButton4.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\guardar.png")); // NOI18N
         jButton4.setText("Guardar");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -448,7 +788,6 @@ public class Fichas extends javax.swing.JDialog {
         jButton5.setBackground(new java.awt.Color(0, 153, 204));
         jButton5.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
         jButton5.setForeground(new java.awt.Color(255, 255, 255));
-        jButton5.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\cancelar.png")); // NOI18N
         jButton5.setText("Eliminar");
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -553,63 +892,128 @@ public class Fichas extends javax.swing.JDialog {
 
         jPanel3.setBackground(new java.awt.Color(74, 159, 181));
 
-        jLabel18.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel18.setText("PRESION ARTERIAL");
+        jLabel53.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel53.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (3).png"))); // NOI18N
 
-        jLabel19.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel19.setText("FRECUANCIA CARDIACA");
-        jLabel19.setDoubleBuffered(true);
-
-        jLabel20.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel20.setText("SATURACION ");
-
-        jLabel21.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel21.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\altura (1).png")); // NOI18N
-        jLabel21.setText("ESTATURA (CM)");
-
-        jLabel22.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel22.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\escala.png")); // NOI18N
-        jLabel22.setText("PESO (KG)");
-
-        jLabel23.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel23.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\temperatura-alta (1).png")); // NOI18N
-        jLabel23.setText("TEMPERATURA");
-
-        jLabel24.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel24.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\imc (2).png")); // NOI18N
-        jLabel24.setText("IMC");
-
-        F_CARDIACA.addActionListener(new java.awt.event.ActionListener() {
+        F_CARDIACA14.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                F_CARDIACAActionPerformed(evt);
+                F_CARDIACA14ActionPerformed(evt);
             }
         });
 
-        PESO.addActionListener(new java.awt.event.ActionListener() {
+        jLabel54.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel54.setText("PESO (KG)");
+
+        jLabel55.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (1).png"))); // NOI18N
+
+        F_CARDIACA15.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                PESOActionPerformed(evt);
+                F_CARDIACA15ActionPerformed(evt);
             }
         });
 
-        jLabel25.setFont(new java.awt.Font("SansSerif", 0, 24)); // NOI18N
-        jLabel25.setText("EXAMEN FISICO");
+        jLabel56.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel56.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel56.setText("FRECUANCIA CARDIACA");
+        jLabel56.setDoubleBuffered(true);
 
-        jLabel9.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\monitor-de-pulso-cardiaco.png")); // NOI18N
+        F_CARDIACA16.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA16.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA16ActionPerformed(evt);
+            }
+        });
 
-        jLabel28.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\saturacion-de-oxigeno.png")); // NOI18N
+        jLabel57.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file.png"))); // NOI18N
+        jLabel57.setText("jLabel9");
 
-        jLabel29.setIcon(new javax.swing.ImageIcon("C:\\FichaMedica\\img\\presion-arterial (2).png")); // NOI18N
+        jLabel58.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel58.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel58.setText("PRESION ARTERIAL");
+
+        F_CARDIACA17.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA17ActionPerformed(evt);
+            }
+        });
+
+        jLabel59.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel59.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel59.setText("SATURACION ");
+
+        jLabel60.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (2).png"))); // NOI18N
+
+        jLabel61.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (5).png"))); // NOI18N
+
+        F_CARDIACA18.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA18ActionPerformed(evt);
+            }
+        });
+
+        jLabel62.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel62.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel62.setText("TEMPERATURA");
+
+        F_CARDIACA19.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA19ActionPerformed(evt);
+            }
+        });
+
+        jLabel63.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel63.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (4).png"))); // NOI18N
+
+        jLabel64.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel64.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel64.setText("ESTATURA (CM)");
+
+        jLabel65.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        jLabel65.setIcon(new javax.swing.ImageIcon(getClass().getResource("/img/file (6).png"))); // NOI18N
+
+        F_CARDIACA20.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+        F_CARDIACA20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                F_CARDIACA20ActionPerformed(evt);
+            }
+        });
+
+        jLabel66.setFont(new java.awt.Font("Segoe UI Black", 0, 14)); // NOI18N
+        jLabel66.setForeground(new java.awt.Color(242, 242, 242));
+        jLabel66.setText("IMC");
+
+        jButton6.setBackground(new java.awt.Color(0, 153, 204));
+        jButton6.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        jButton6.setForeground(new java.awt.Color(255, 255, 255));
+        jButton6.setText("Guardar");
+        jButton6.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton6ActionPerformed(evt);
+            }
+        });
+
+        jButton11.setBackground(new java.awt.Color(0, 153, 204));
+        jButton11.setFont(new java.awt.Font("Myanmar Text", 1, 18)); // NOI18N
+        jButton11.setForeground(new java.awt.Color(255, 255, 255));
+        jButton11.setText("Cancelar");
+        jButton11.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton11ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 300, Short.MAX_VALUE)
-                .addComponent(jLabel25)
-                .addGap(301, 301, 301))
             .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(69, 69, 69)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -619,81 +1023,106 @@ public class Fichas extends javax.swing.JDialog {
                                 .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 64, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jLabel28)
                             .addComponent(jLabel29))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addGap(140, 140, 140)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(jPanel3Layout.createSequentialGroup()
-                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(jLabel19)
-                                        .addGap(18, 18, 18)
-                                        .addComponent(F_CARDIACA, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(jLabel18))
-                                .addGap(18, 18, 18))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
                                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(IMC, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(P_ARTERIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(jPanel3Layout.createSequentialGroup()
-                                        .addComponent(jLabel20)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                        .addComponent(SATURCION, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGap(27, 27, 27))))
+                                    .addComponent(jLabel65)
+                                    .addComponent(jLabel55)
+                                    .addComponent(jLabel60)
+                                    .addComponent(jLabel57, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel53)
+                                    .addComponent(jLabel63))
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addComponent(F_CARDIACA17, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(F_CARDIACA16, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel66, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel58)
+                                    .addComponent(jLabel59)
+                                    .addComponent(jLabel56)
+                                    .addComponent(jLabel54)
+                                    .addComponent(jLabel64)
+                                    .addComponent(F_CARDIACA15, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(F_CARDIACA14, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(F_CARDIACA19, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(F_CARDIACA20, javax.swing.GroupLayout.PREFERRED_SIZE, 189, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel61)
+                                .addGap(18, 18, 18)
+                                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel62)
+                                    .addComponent(F_CARDIACA18, javax.swing.GroupLayout.PREFERRED_SIZE, 190, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(85, 85, 85)
-                        .addComponent(jLabel24, javax.swing.GroupLayout.PREFERRED_SIZE, 105, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel21)
-                    .addComponent(jLabel23)
-                    .addComponent(jLabel22))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(TEMPERATURA, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(ESTATURA, javax.swing.GroupLayout.PREFERRED_SIZE, 116, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(PESO, javax.swing.GroupLayout.PREFERRED_SIZE, 117, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addGap(208, 208, 208)
+                        .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 143, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 135, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(251, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel3Layout.createSequentialGroup()
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel25)
-                        .addGap(38, 38, 38)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel19)
-                            .addComponent(jLabel22)
-                            .addComponent(F_CARDIACA, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(PESO, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel7))
-                        .addGap(49, 49, 49)
-                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel20)
-                            .addComponent(jLabel21)
-                            .addComponent(SATURCION, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(ESTATURA, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
                         .addGap(66, 66, 66)
                         .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
-                        .addComponent(jLabel28)))
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel28)
+                        .addGap(88, 88, 88)
+                        .addComponent(jLabel29))
                     .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(54, 54, 54)
+                        .addGap(76, 76, 76)
+                        .addComponent(jLabel7))
+                    .addGroup(jPanel3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel62)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel61)
+                            .addComponent(F_CARDIACA18, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel59)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel60)
+                            .addComponent(F_CARDIACA17, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel58)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel23)
-                            .addComponent(P_ARTERIAL, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel18)
-                            .addComponent(TEMPERATURA, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(jPanel3Layout.createSequentialGroup()
-                        .addGap(50, 50, 50)
-                        .addComponent(jLabel29)))
-                .addGap(33, 33, 33)
-                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel24)
-                    .addComponent(IMC, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(477, Short.MAX_VALUE))
+                            .addComponent(jLabel57)
+                            .addComponent(F_CARDIACA16, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(jPanel3Layout.createSequentialGroup()
+                                .addComponent(jLabel56, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(F_CARDIACA15, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel55))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jLabel54)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(F_CARDIACA14, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel53))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel64)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel63, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(F_CARDIACA19, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(8, 8, 8)
+                        .addComponent(jLabel66)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel65, javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(F_CARDIACA20, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addGap(18, 18, 18)
+                .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton11, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(287, Short.MAX_VALUE))
         );
 
         jTabbedPane4.addTab("EXAMENES FISICO", jPanel3);
@@ -718,8 +1147,7 @@ public class Fichas extends javax.swing.JDialog {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    
-    
+
     private void TXT_A_P_FAMILIARESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_A_P_FAMILIARESActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_TXT_A_P_FAMILIARESActionPerformed
@@ -772,13 +1200,181 @@ public class Fichas extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton5ActionPerformed
 
-    private void PESOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_PESOActionPerformed
+    private void F_CARDIACA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA4ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_PESOActionPerformed
+    }//GEN-LAST:event_F_CARDIACA4ActionPerformed
+
+    private void F_CARDIACA3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA3ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA3ActionPerformed
+
+    private void F_CARDIACA2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA2ActionPerformed
 
     private void F_CARDIACAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACAActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_F_CARDIACAActionPerformed
+
+    private void F_CARDIACA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA1ActionPerformed
+
+    private void F_CARDIACA5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA5ActionPerformed
+
+    private void F_CARDIACA7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA7ActionPerformed
+
+    private void F_CARDIACA6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA6ActionPerformed
+
+    private void F_CARDIACA8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA8ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA8ActionPerformed
+
+    private void F_CARDIACA9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA9ActionPerformed
+
+    private void F_CARDIACA10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA10ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA10ActionPerformed
+
+    private void F_CARDIACA11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA11ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA11ActionPerformed
+
+    private void F_CARDIACA12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA12ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA12ActionPerformed
+
+    private void F_CARDIACA13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA13ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA13ActionPerformed
+
+    private void F_CARDIACA14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA14ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA14ActionPerformed
+
+    private void F_CARDIACA15ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA15ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA15ActionPerformed
+
+    private void F_CARDIACA16ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA16ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA16ActionPerformed
+
+    private void F_CARDIACA17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA17ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA17ActionPerformed
+
+    private void F_CARDIACA18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA18ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA18ActionPerformed
+
+    private void F_CARDIACA19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA19ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA19ActionPerformed
+
+    private void F_CARDIACA20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA20ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_F_CARDIACA20ActionPerformed
+
+    private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton9ActionPerformed
+
+    private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton7ActionPerformed
+
+    private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton6ActionPerformed
+
+    private void jButton11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton11ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton11ActionPerformed
+
+    private void TXT_NOMBREKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_NOMBREKeyPressed
+
+    private void TXT_NOMBREKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_NOMBREKeyReleased
+
+    private void TXT_APELLIDOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_APELLIDOKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_APELLIDOKeyReleased
+
+    private void TXT_L_NACIMIENTOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_L_NACIMIENTOKeyReleased
+
+    private void TXT_DIRECCIONKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_DIRECCIONKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_DIRECCIONKeyReleased
+
+    private void TXT_TELEFONOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_TELEFONOKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_TELEFONOKeyReleased
+
+    private void TXT_CEDULAKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_CEDULAKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_CEDULAKeyReleased
+
+    private void TXT_N_HIJOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_N_HIJOSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_N_HIJOSActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+    private String validar() {
+        int c = 0;
+        StringBuilder err = new StringBuilder();
+
+        // Validar CEDULA
+        var var1 = validateString(TXT_CEDULA.getText());
+        if (var1 == null) {
+            err.append("cedula");
+            c++;
+        } else {
+            TXT_CEDULA.setText(var1);
+        }
+
+        var var2 = validateString(TXT_APELLIDO.getText());
+        if (var2 == null) {
+            err.append("cedula");
+            c++;
+        } else {
+            TXT_APELLIDO.setText(var1);
+        }
+
+        var var4 = validateString(TXT_L_NACIMIENTO.getText());
+        if (var4 == null) {
+            err.append(" cedula");
+            c++;
+        } else {
+            TXT_L_NACIMIENTO.setText(var1);
+        }
+        
+        var var5 = validateString(TXT_N_HIJOS.getText());
+        if (var5 == null) {
+            err.append(" cedula");
+            c++;
+        } else {
+            TXT_N_HIJOS.setText(var1);
+        }
+        
+        System.out.println(err.toString());
+        return err.toString();
+    }
 
     /**
      * @param args the command line arguments
@@ -821,13 +1417,27 @@ public class Fichas extends javax.swing.JDialog {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField ESTATURA;
     private javax.swing.JTextField F_CARDIACA;
-    private javax.swing.JTextField IMC;
-    private javax.swing.JTextField PESO;
-    private javax.swing.JTextField P_ARTERIAL;
-    private javax.swing.JTextField SATURCION;
-    private javax.swing.JTextField TEMPERATURA;
+    private javax.swing.JTextField F_CARDIACA1;
+    private javax.swing.JTextField F_CARDIACA10;
+    private javax.swing.JTextField F_CARDIACA11;
+    private javax.swing.JTextField F_CARDIACA12;
+    private javax.swing.JTextField F_CARDIACA13;
+    private javax.swing.JTextField F_CARDIACA14;
+    private javax.swing.JTextField F_CARDIACA15;
+    private javax.swing.JTextField F_CARDIACA16;
+    private javax.swing.JTextField F_CARDIACA17;
+    private javax.swing.JTextField F_CARDIACA18;
+    private javax.swing.JTextField F_CARDIACA19;
+    private javax.swing.JTextField F_CARDIACA2;
+    private javax.swing.JTextField F_CARDIACA20;
+    private javax.swing.JTextField F_CARDIACA3;
+    private javax.swing.JTextField F_CARDIACA4;
+    private javax.swing.JTextField F_CARDIACA5;
+    private javax.swing.JTextField F_CARDIACA6;
+    private javax.swing.JTextField F_CARDIACA7;
+    private javax.swing.JTextField F_CARDIACA8;
+    private javax.swing.JTextField F_CARDIACA9;
     private javax.swing.JTextField TXT_APELLIDO;
     private javax.swing.JTextField TXT_A_P_FAMILIARES;
     private javax.swing.JTextField TXT_A_P_PERSONALES;
@@ -842,11 +1452,16 @@ public class Fichas extends javax.swing.JDialog {
     private javax.swing.JTextField TXT_TELEFONO;
     private javax.swing.JLabel icono;
     private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton11;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JButton jButton5;
+    private javax.swing.JButton jButton6;
+    private javax.swing.JButton jButton7;
+    private javax.swing.JButton jButton9;
     private javax.swing.JComboBox<String> jComboBox1;
+    private javax.swing.JComboBox<String> jComboBox2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -872,9 +1487,44 @@ public class Fichas extends javax.swing.JDialog {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
+    private javax.swing.JLabel jLabel32;
+    private javax.swing.JLabel jLabel33;
+    private javax.swing.JLabel jLabel34;
+    private javax.swing.JLabel jLabel35;
+    private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
+    private javax.swing.JLabel jLabel38;
+    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel40;
+    private javax.swing.JLabel jLabel41;
+    private javax.swing.JLabel jLabel42;
+    private javax.swing.JLabel jLabel43;
+    private javax.swing.JLabel jLabel44;
+    private javax.swing.JLabel jLabel45;
+    private javax.swing.JLabel jLabel46;
+    private javax.swing.JLabel jLabel47;
+    private javax.swing.JLabel jLabel48;
+    private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel50;
+    private javax.swing.JLabel jLabel51;
+    private javax.swing.JLabel jLabel52;
+    private javax.swing.JLabel jLabel53;
+    private javax.swing.JLabel jLabel54;
+    private javax.swing.JLabel jLabel55;
+    private javax.swing.JLabel jLabel56;
+    private javax.swing.JLabel jLabel57;
+    private javax.swing.JLabel jLabel58;
+    private javax.swing.JLabel jLabel59;
     private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel60;
+    private javax.swing.JLabel jLabel61;
+    private javax.swing.JLabel jLabel62;
+    private javax.swing.JLabel jLabel63;
+    private javax.swing.JLabel jLabel64;
+    private javax.swing.JLabel jLabel65;
+    private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;

@@ -24,6 +24,7 @@ public class Ficha_new extends javax.swing.JDialog {
         initComponents();
         setLocationRelativeTo(null);
         cargarImagen();
+        setSize(797, 720); 
     }
     private void cargarImagen() {
 
