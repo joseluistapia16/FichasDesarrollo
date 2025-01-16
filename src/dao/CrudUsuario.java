@@ -139,7 +139,7 @@ public class CrudUsuario implements UsuarioDAO {
                         rs.getString("apellido"),
                         rs.getString("correo"),
                         rs.getInt("id_rol"),
-                        rs.getString("id_usuario_regtistro"),
+                        rs.getString("id_usuario_registro"),
                         rs.getString("estado")
                 );
                 datos.add(obj);

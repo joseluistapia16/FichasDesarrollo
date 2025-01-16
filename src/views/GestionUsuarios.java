@@ -4,7 +4,8 @@
  */
 package views;
 
-
+import componentes.Tablas;
+import dao.CrudUsuario;
 import domain.Usuario;
 import java.util.List;
 import javax.swing.JFrame;
@@ -14,10 +15,11 @@ import javax.swing.JFrame;
  * @author user
  */
 public class GestionUsuarios extends javax.swing.JDialog {
-    
+
     Usuario user = null;
     List<Usuario> lista = null;
-
+    CrudUsuario crudU = null;
+    Tablas tbl = null;
 
     /**
      * Creates new form GestionUsuarios
@@ -26,7 +28,10 @@ public class GestionUsuarios extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-
+        tbl = new Tablas();
+        crudU = new CrudUsuario();
+        lista = crudU.getAll();
+        tbl.cargarUsuarios(lista, tabla);
     }
 
     /**
@@ -49,13 +54,25 @@ public class GestionUsuarios extends javax.swing.JDialog {
 
         tabla.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null},
-                {null, null, null, null}
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {},
+                {}
             },
             new String [] {
-                "Title 1", "Title 2", "Title 3", "Title 4"
+
             }
         ));
         tabla.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -144,7 +161,7 @@ public class GestionUsuarios extends javax.swing.JDialog {
 
     private void filtroKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_filtroKeyReleased
         var user = filtro.getText();
-//        tbl.filter(user, tabla);
+        tbl.filter(user, tabla);
 
     }//GEN-LAST:event_filtroKeyReleased
 
@@ -165,14 +182,14 @@ public class GestionUsuarios extends javax.swing.JDialog {
 //                    tbl.filter("", tabla);                    
                 }
             }
-            
+
         } catch (Exception e) {
         }
 
     }//GEN-LAST:event_tablaMousePressed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        setVisible(false); 
+        setVisible(false);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed

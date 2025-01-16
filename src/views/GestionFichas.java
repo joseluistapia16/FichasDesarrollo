@@ -5,6 +5,7 @@
 package views;
 
 
+import dao.CrudUsuario;
 import domain.Usuario;
 import java.util.List;
 import javax.swing.JFrame;
@@ -17,7 +18,8 @@ public class GestionFichas extends javax.swing.JDialog {
     
     Usuario user = null;
     List<Usuario> lista = null;
-
+    CrudUsuario crudU = null;
+     
 
     /**
      * Creates new form GestionUsuarios
@@ -26,7 +28,7 @@ public class GestionFichas extends javax.swing.JDialog {
         super(parent, modal);
         initComponents();
         setLocationRelativeTo(null);
-
+ 
     }
 
     /**
