@@ -101,6 +101,7 @@ public class VentanaLogin extends javax.swing.JDialog {
         jButton2.setText("Cancelar");
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setUndecorated(true);
 
         panel.setBackground(new java.awt.Color(74, 159, 181));
         panel.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
