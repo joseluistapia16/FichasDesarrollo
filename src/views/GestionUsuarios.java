@@ -174,8 +174,8 @@ public class GestionUsuarios extends javax.swing.JDialog {
                 var obj = getObject(tabla.getValueAt(fila, 1).toString(), lista);
                 if (obj != null) {
                     System.out.println(obj.getUsuario());
-//                    var ob = new EditarRegistro(new JFrame(), true, obj);
-//                    ob.setVisible(true);
+                    var ob = new EditarUsuario(new JFrame(), true, obj);
+                    ob.setVisible(true);
 //                    lista = arch.getAll(ruta);
 //                    tbl.cargarUsuarios(lista, tabla);
 //                    filtro.setText("");
