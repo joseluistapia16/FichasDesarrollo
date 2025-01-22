@@ -617,14 +617,14 @@
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="60" max="-2" attributes="0"/>
                           <Component id="jLabel25" min="-2" pref="90" max="-2" attributes="0"/>
-                          <EmptySpace pref="644" max="32767" attributes="0"/>
+                          <EmptySpace pref="666" max="32767" attributes="0"/>
                       </Group>
                   </Group>
                   <Group type="103" rootIndex="2" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <EmptySpace min="-2" pref="177" max="-2" attributes="0"/>
                           <Component id="jComboBox2" min="-2" pref="193" max="-2" attributes="0"/>
-                          <EmptySpace pref="424" max="32767" attributes="0"/>
+                          <EmptySpace pref="446" max="32767" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
@@ -1913,11 +1913,6 @@
               </Events>
             </Component>
             <Component class="javax.swing.JLabel" name="jLabel68">
-              <Properties>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="2" name="C:\Fichas_Medicas\img\historial-medico.png"/>
-                </Property>
-              </Properties>
             </Component>
             <Container class="javax.swing.JScrollPane" name="jScrollPane1">
               <AuxValues>

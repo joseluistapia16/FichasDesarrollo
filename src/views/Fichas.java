@@ -709,12 +709,12 @@ public class Fichas extends javax.swing.JDialog {
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(60, 60, 60)
                     .addComponent(jLabel25, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(644, Short.MAX_VALUE)))
+                    .addContainerGap(666, Short.MAX_VALUE)))
             .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(jPanel1Layout.createSequentialGroup()
                     .addGap(177, 177, 177)
                     .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(424, Short.MAX_VALUE)))
+                    .addContainerGap(446, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1081,8 +1081,6 @@ public class Fichas extends javax.swing.JDialog {
             }
         });
 
-        jLabel68.setIcon(new javax.swing.ImageIcon("C:\\Fichas_Medicas\\img\\historial-medico.png")); // NOI18N
-
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {null, null, null, null},
@@ -1304,50 +1302,6 @@ public class Fichas extends javax.swing.JDialog {
     }// </editor-fold>//GEN-END:initComponents
 
 
-    private void TXT_A_P_FAMILIARESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_A_P_FAMILIARESActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_A_P_FAMILIARESActionPerformed
-
-    private void TXT_A_P_PERSONALESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_A_P_PERSONALESActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_A_P_PERSONALESActionPerformed
-
-    private void TXT_E_ACTUALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_E_ACTUALActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_E_ACTUALActionPerformed
-
-    private void TXT_APELLIDOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_APELLIDOActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_APELLIDOActionPerformed
-
-    private void TXT_NOMBREActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_NOMBREActionPerformed
-
-    }//GEN-LAST:event_TXT_NOMBREActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
-
-    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
-        setVisible(false);
-    }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox1ActionPerformed
-
-    private void TXT_CEDULAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_CEDULAActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_CEDULAActionPerformed
-
-    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton4ActionPerformed
-
-    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton5ActionPerformed
-
     private void F_CARDIACA4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA4ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_F_CARDIACA4ActionPerformed
@@ -1412,34 +1366,6 @@ public class Fichas extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton7ActionPerformed
 
-    private void TXT_NOMBREKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyPressed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_NOMBREKeyPressed
-
-    private void TXT_NOMBREKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyReleased
-
-    }//GEN-LAST:event_TXT_NOMBREKeyReleased
-
-    private void TXT_APELLIDOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_APELLIDOKeyReleased
-
-    }//GEN-LAST:event_TXT_APELLIDOKeyReleased
-
-    private void TXT_L_NACIMIENTOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOKeyReleased
-
-    }//GEN-LAST:event_TXT_L_NACIMIENTOKeyReleased
-
-    private void TXT_CEDULAKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_CEDULAKeyReleased
-
-    }//GEN-LAST:event_TXT_CEDULAKeyReleased
-
-    private void TXT_N_HIJOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_N_HIJOSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_N_HIJOSActionPerformed
-
-    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox2ActionPerformed
-
     private void F_CARDIACA21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_F_CARDIACA21ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_F_CARDIACA21ActionPerformed
@@ -1472,20 +1398,25 @@ public class Fichas extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_F_CARDIACA14ActionPerformed
 
-    private void TXT_CEDULAKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_CEDULAKeyTyped
-        char car = evt.getKeyChar();
-        if (TXT_CEDULA.getText().length() >= 10) {
-            evt.consume();
-        }
-        if ((car < '0' || car > '9')) {
-            evt.consume();
-        }
-
-    }//GEN-LAST:event_TXT_CEDULAKeyTyped
-
-    private void TXT_NOMBREKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyTyped
+    private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_NOMBREKeyTyped
+    }//GEN-LAST:event_jButton5ActionPerformed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
+
+    private void TXT_E_ACTUALActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_E_ACTUALActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_E_ACTUALActionPerformed
+
+    private void TXT_A_P_PERSONALESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_A_P_PERSONALESActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_A_P_PERSONALESActionPerformed
+
+    private void TXT_A_P_FAMILIARESActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_A_P_FAMILIARESActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_A_P_FAMILIARESActionPerformed
 
     private void jPanel1KeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jPanel1KeyTyped
         var var2 = validateString(TXT_NOMBRE.getText());
@@ -1500,81 +1431,6 @@ public class Fichas extends javax.swing.JDialog {
         }
     }//GEN-LAST:event_jPanel1KeyTyped
 
-    private void TXT_APELLIDOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_APELLIDOKeyTyped
-        var var2 = validateString(TXT_APELLIDO.getText());
-        if (var2 == null) {
-            err.append("FUNCIONAL");
-            int c = 0;
-            c++;
-        } else {
-            String var1 = null;
-            TXT_APELLIDO.setText(var1);
-            System.out.println(err.toString());
-            
-        }
-
-    }//GEN-LAST:event_TXT_APELLIDOKeyTyped
-
-    private void TXT_F_NACIMIENTOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_F_NACIMIENTOKeyTyped
-        
-
-    }//GEN-LAST:event_TXT_F_NACIMIENTOKeyTyped
-
-    private void TXT_L_NACIMIENTOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOKeyTyped
-
-    }//GEN-LAST:event_TXT_L_NACIMIENTOKeyTyped
-
-    private void TXT_L_NACIMIENTOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_L_NACIMIENTOActionPerformed
-
-    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
-        var cld = new GetFecha(new JFrame(), true);
-        cld.setVisible(true);
-        var fec = cld.getStr_fecha();
-        System.out.println(" fecha frm " + fec);
-        TXT_F_NACIMIENTO.setText(fec);
-    }//GEN-LAST:event_jButton8ActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        guardarImagen();
-    }//GEN-LAST:event_jButton1ActionPerformed
-
-    private void TXT_N_HIJOSKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_N_HIJOSKeyTyped
-        
-        var var5 = validateString(TXT_N_HIJOS.getText());
-        if (var5 == null) {
-            err.append("Numero de hijos");
-            int c = 0;
-            c++;
-        } else {
-            TXT_N_HIJOS.setText(var1);
-        }
-        System.out.println(err.toString());
-    }//GEN-LAST:event_TXT_N_HIJOSKeyTyped
-
-    private void TXT_TELEFONOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_TELEFONOKeyTyped
-        var var9 = validateString(TXT_TELEFONO.getText());
-        if (var9 == null) {
-            err.append(" Telefono");
-            int c = 0;
-            c++;
-        } else {
-            TXT_TELEFONO.setText(var1);
-        }
-        System.out.println(err.toString());
-        
-        System.out.println(err.toString());
-    }//GEN-LAST:event_TXT_TELEFONOKeyTyped
-
-    private void TXT_TELEFONOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_TELEFONOKeyReleased
-        validar();
-    }//GEN-LAST:event_TXT_TELEFONOKeyReleased
-
-    private void TXT_TELEFONOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_TELEFONOActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_TXT_TELEFONOActionPerformed
-
     private void direccionKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_direccionKeyTyped
         var var10 = validateString(direccion.getText());
         if (var10 == null) {
@@ -1588,8 +1444,146 @@ public class Fichas extends javax.swing.JDialog {
             }
         }
         System.out.println(err.toString());
-
     }//GEN-LAST:event_direccionKeyTyped
+
+    private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
+        var cld = new GetFecha(new JFrame(), true);
+        cld.setVisible(true);
+        var fec = cld.getStr_fecha();
+        System.out.println(" fecha frm " + fec);
+        TXT_F_NACIMIENTO.setText(fec);
+    }//GEN-LAST:event_jButton8ActionPerformed
+
+    private void jComboBox2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox2ActionPerformed
+
+    private void jComboBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox1ActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+        setVisible(false);
+    }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        guardarImagen();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void TXT_CEDULAKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_CEDULAKeyTyped
+        char car = evt.getKeyChar();
+        if (TXT_CEDULA.getText().length() >= 10) {
+            evt.consume();
+        }
+        if ((car < '0' || car > '9')) {
+            evt.consume();
+        }
+    }//GEN-LAST:event_TXT_CEDULAKeyTyped
+
+    private void TXT_CEDULAKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_CEDULAKeyReleased
+
+    }//GEN-LAST:event_TXT_CEDULAKeyReleased
+
+    private void TXT_CEDULAActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_CEDULAActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_CEDULAActionPerformed
+
+    private void TXT_TELEFONOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_TELEFONOKeyTyped
+        var var9 = validateString(TXT_TELEFONO.getText());
+        if (var9 == null) {
+            err.append(" Telefono");
+            int c = 0;
+            c++;
+        } else {
+            TXT_TELEFONO.setText(var1);
+        }
+        System.out.println(err.toString());
+
+        System.out.println(err.toString());
+    }//GEN-LAST:event_TXT_TELEFONOKeyTyped
+
+    private void TXT_TELEFONOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_TELEFONOKeyReleased
+        validar();
+    }//GEN-LAST:event_TXT_TELEFONOKeyReleased
+
+    private void TXT_TELEFONOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_TELEFONOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_TELEFONOActionPerformed
+
+    private void TXT_N_HIJOSKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_N_HIJOSKeyTyped
+
+        var var5 = validateString(TXT_N_HIJOS.getText());
+        if (var5 == null) {
+            err.append("Numero de hijos");
+            int c = 0;
+            c++;
+        } else {
+            TXT_N_HIJOS.setText(var1);
+        }
+        System.out.println(err.toString());
+    }//GEN-LAST:event_TXT_N_HIJOSKeyTyped
+
+    private void TXT_N_HIJOSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_N_HIJOSActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_N_HIJOSActionPerformed
+
+    private void TXT_L_NACIMIENTOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOKeyTyped
+
+    }//GEN-LAST:event_TXT_L_NACIMIENTOKeyTyped
+
+    private void TXT_L_NACIMIENTOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOKeyReleased
+
+    }//GEN-LAST:event_TXT_L_NACIMIENTOKeyReleased
+
+    private void TXT_L_NACIMIENTOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_L_NACIMIENTOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_L_NACIMIENTOActionPerformed
+
+    private void TXT_F_NACIMIENTOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_F_NACIMIENTOKeyTyped
+
+    }//GEN-LAST:event_TXT_F_NACIMIENTOKeyTyped
+
+    private void TXT_APELLIDOKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_APELLIDOKeyTyped
+        var var2 = validateString(TXT_APELLIDO.getText());
+        if (var2 == null) {
+            err.append("FUNCIONAL");
+            int c = 0;
+            c++;
+        } else {
+            String var1 = null;
+            TXT_APELLIDO.setText(var1);
+            System.out.println(err.toString());
+
+        }
+    }//GEN-LAST:event_TXT_APELLIDOKeyTyped
+
+    private void TXT_APELLIDOKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_APELLIDOKeyReleased
+
+    }//GEN-LAST:event_TXT_APELLIDOKeyReleased
+
+    private void TXT_APELLIDOActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_APELLIDOActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_APELLIDOActionPerformed
+
+    private void TXT_NOMBREKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_NOMBREKeyTyped
+
+    private void TXT_NOMBREKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyReleased
+
+    }//GEN-LAST:event_TXT_NOMBREKeyReleased
+
+    private void TXT_NOMBREKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_TXT_NOMBREKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_TXT_NOMBREKeyPressed
+
+    private void TXT_NOMBREActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_TXT_NOMBREActionPerformed
+
+    }//GEN-LAST:event_TXT_NOMBREActionPerformed
     private void guardarImagen() {
         String pass = "\\Fichas_Medicas\\fotos\\";
         //String pass = "\\Users\\TapiaSoftware\\Documents\\NetBeansProjects\\HermanosJesus\\src\\pictures\\";
