@@ -49,7 +49,9 @@ public class EditarUsuario extends javax.swing.JDialog {
         nombre.setText(obj.getNombre());
         apellido.setText(obj.getApellido());
         correo.setText(obj.getCorreo());
-        System.out.println("Id_Rol "+obj.getId_rol());
+        var res = crudR.cadenaRol(obj.getId_rol());
+          roles.setSelectedItem(res);
+        System.out.println("Id_Rol "+obj.getId_rol()+" "+res);
     }
     private void fillRoles() {
         crudR = new CrudRoles();

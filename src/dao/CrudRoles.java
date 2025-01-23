@@ -4,7 +4,6 @@
  */
 package dao;
 
-
 import domain.Roles;
 import impl.RolesDAO;
 import java.util.List;
@@ -24,22 +23,21 @@ import java.util.logging.Logger;
  */
 public class CrudRoles implements RolesDAO {
 
-   private String base = "fichas_medicas_desarrollo";
+    private String base = "fichas_medicas_desarrollo";
     private Conexion conexion;
 
     public CrudRoles() {
-         conexion = new Conexion();
+        conexion = new Conexion();
     }
-  
 
     @Override
     public List<Roles> getAll() {
-      List<Roles> datos = new ArrayList<>();
+        List<Roles> datos = new ArrayList<>();
         var query = "select * from roles where estado='A'";
         try (
                 Connection conect = this.conexion.conectar(base); PreparedStatement st = conect.prepareStatement(query); ResultSet rs = st.executeQuery()) {
 
-            while (rs.next()) { 
+            while (rs.next()) {
                 Roles rol = new Roles(rs.getInt("id_rol"), rs.getString("nombre"), rs.getString("estado"));
                 datos.add(rol);
             }
@@ -99,7 +97,6 @@ public class CrudRoles implements RolesDAO {
         }
         return false;
 
-        
     }
 
     @Override
@@ -107,8 +104,7 @@ public class CrudRoles implements RolesDAO {
         Roles roles = null;
         var query = "SELECT * FROM roles WHERE id_rol = ? AND estado = 'A'";
         try (
-                Connection conect = this.conexion.conectar(base);
-                PreparedStatement st = conect.prepareStatement(query)) {
+                Connection conect = this.conexion.conectar(base); PreparedStatement st = conect.prepareStatement(query)) {
             st.setInt(1, id_rol);                      // Asigna el id_rol al parámetro de la consulta
             try (ResultSet rs = st.executeQuery()) {
                 if (rs.next()) {                       // Si se encuentra un resultado
@@ -123,7 +119,7 @@ public class CrudRoles implements RolesDAO {
             Logger.getLogger(CrudRoles.class.getName()).log(Level.SEVERE, null, ex);
         }
         return roles;
-        
+
     }
 
     @Override
@@ -137,11 +133,22 @@ public class CrudRoles implements RolesDAO {
                 return rs.getInt("id_rol");           // Retorna el id_rol encontrado
             }
         } catch (SQLException ex) {
-                Logger.getLogger(CrudRoles.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CrudRoles.class.getName()).log(Level.SEVERE, null, ex);
         }
         return null;
 
-        
+    }
+
+    public String cadenaRol(Integer id) {
+        var res = "";
+        List<Roles> lista = getAll();
+        for (int i = 0; i < lista.size(); i++) {
+            if (id == lista.get(i).getId_rol()) {
+                res = lista.get(i).getNombre();
+                break;
+            }
+        }
+        return res;
     }
 
 }

@@ -22,7 +22,7 @@ import java.util.ArrayList;
  */
 public class CrudUsuario implements UsuarioDAO {
 
-   private String base = "fichas_medicas_desarrollo";
+    private String base = "fichas_medicas_desarrollo";
     private Conexion conexion;
 
     public CrudUsuario() {
@@ -117,7 +117,7 @@ public class CrudUsuario implements UsuarioDAO {
         } catch (SQLException ex) {
             Logger.getLogger(CrudArea.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return obj; 
+        return obj;
     }
 
     @Override
@@ -127,7 +127,7 @@ public class CrudUsuario implements UsuarioDAO {
 
     @Override
     public List<Usuario> getAll() {
-              List<Usuario> datos = new ArrayList<>();
+        List<Usuario> datos = new ArrayList<>();
         var query = "select * from usuario where estado='A'";
         try (
                 Connection conect = this.conexion.conectar(base); PreparedStatement st = conect.prepareStatement(query); ResultSet rs = st.executeQuery()) {
@@ -148,7 +148,7 @@ public class CrudUsuario implements UsuarioDAO {
             Logger.getLogger(CrudArea.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        return datos;  
+        return datos;
     }
 
     @Override
@@ -179,4 +179,5 @@ public class CrudUsuario implements UsuarioDAO {
         return obj;
     }
 
+  
 }
