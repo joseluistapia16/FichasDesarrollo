@@ -16,7 +16,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 
 public class CrudArea implements AreaDAO {
-    private String base = "terceroa";
+    private String base = "fichas_medicas_desarrollo";
     private Conexion conexion;
 
     public CrudArea() {
@@ -58,8 +58,8 @@ public class CrudArea implements AreaDAO {
                 Connection conect = this.conexion.conectar(base); PreparedStatement st = conect.prepareStatement(query); ResultSet rs = st.executeQuery()) {
 
             while (rs.next()) {
-                Area area = new Area(rs.getInt("id_area"), rs.getString("nombre_area"),
-                        rs.getInt("id_usuario"), rs.getString("estado"));
+                Area area = new Area(rs.getInt("id_area"), rs.getString("nombre"),
+                        rs.getString("id_usuario"), rs.getString("estado"));
                 datos.add(area);
             }
         } catch (SQLException ex) {
