@@ -4,14 +4,20 @@
  */
 package views;
 
+import dao.CrudArea;
+import domain.Area;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
+import java.util.List;
 
 /**
  *
  * @author user
  */
 public class ParteDiario extends javax.swing.JDialog {
+    private List<Area> areas = null;
+    private CrudArea crudA = null;
+   
 
     /**
      * Creates new form ParteDiario
@@ -21,6 +27,19 @@ public class ParteDiario extends javax.swing.JDialog {
         initComponents();
         setSize(797, 670);
         setLocationRelativeTo(null);
+        
+        crudA = new CrudArea();
+        areas = crudA.getAll();
+        System.out.println("lista "+areas.size());
+        fillAreas();
+    }
+    private void fillAreas() {
+        areas = crudA.getAll();
+        area.removeAllItems();
+        area.addItem("Elija una Opción...");
+        for (int i = 0; i < areas.size(); i++) {
+            area.addItem(areas.get(i).getNombre_area());
+        }
     }
 
     /**
@@ -48,7 +67,7 @@ public class ParteDiario extends javax.swing.JDialog {
         jLabel22 = new javax.swing.JLabel();
         apellidos = new javax.swing.JTextField();
         jLabel13 = new javax.swing.JLabel();
-        jComboBox4 = new javax.swing.JComboBox<>();
+        area = new javax.swing.JComboBox<>();
         jLabel19 = new javax.swing.JLabel();
         jTextField13 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
@@ -120,6 +139,9 @@ public class ParteDiario extends javax.swing.JDialog {
             }
         });
         cedula.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                cedulaKeyReleased(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 cedulaKeyTyped(evt);
             }
@@ -196,11 +218,11 @@ public class ParteDiario extends javax.swing.JDialog {
         jLabel13.setForeground(new java.awt.Color(242, 242, 242));
         jLabel13.setText("ÁREA");
 
-        jComboBox4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
-        jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Profesor", "Inspector", "Vicerectora", "Rectora" }));
-        jComboBox4.addActionListener(new java.awt.event.ActionListener() {
+        area.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        area.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Estudiante", "Profesor", "Inspector", "Vicerectora", "Rectora" }));
+        area.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jComboBox4ActionPerformed(evt);
+                areaActionPerformed(evt);
             }
         });
 
@@ -285,7 +307,7 @@ public class ParteDiario extends javax.swing.JDialog {
                                         .addComponent(TXT_CEDULA, javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(jTextField1, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jTextField13, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(area, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jTextField17, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(apellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(nombre, javax.swing.GroupLayout.PREFERRED_SIZE, 178, javax.swing.GroupLayout.PREFERRED_SIZE)))
@@ -336,7 +358,7 @@ public class ParteDiario extends javax.swing.JDialog {
                             .addComponent(jLabel22))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jComboBox4, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(area, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel13))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -473,9 +495,9 @@ public class ParteDiario extends javax.swing.JDialog {
         // TODO add your handling code here:
     }//GEN-LAST:event_apellidosKeyTyped
 
-    private void jComboBox4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jComboBox4ActionPerformed
+    private void areaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_areaActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_jComboBox4ActionPerformed
+    }//GEN-LAST:event_areaActionPerformed
 
     private void jTextField13ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextField13ActionPerformed
         // TODO add your handling code here:
@@ -486,6 +508,10 @@ public class ParteDiario extends javax.swing.JDialog {
         String textoSinEspaciosIniciales = textoOriginal.replaceAll("^\\s+", "");
         jTextField17.setText(textoSinEspaciosIniciales);        // TODO add your handling code here:
     }//GEN-LAST:event_jTextField17KeyReleased
+
+    private void cedulaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cedulaKeyReleased
+        // TODO add your handling code here:
+    }//GEN-LAST:event_cedulaKeyReleased
 
     /**
      * @param args the command line arguments
@@ -532,10 +558,10 @@ public class ParteDiario extends javax.swing.JDialog {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JTextField TXT_CEDULA;
     private javax.swing.JTextField apellidos;
+    private javax.swing.JComboBox<String> area;
     private javax.swing.JTextField cedula;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
-    private javax.swing.JComboBox<String> jComboBox4;
     private javax.swing.JDialog jDialog1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel13;
