@@ -33,6 +33,7 @@ public class GestionUsuarios extends javax.swing.JDialog {
         lista = crudU.getAll();
         tbl.cargarUsuarios(lista, tabla);
     }
+    
 
     /**
      * This method is called from within the constructor to initialize the form.
