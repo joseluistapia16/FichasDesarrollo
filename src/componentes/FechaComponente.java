@@ -6,6 +6,8 @@ import java.util.Calendar;
 import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 
 /*
  * To change this template, choose Tools | Templates
@@ -288,25 +290,26 @@ public class FechaComponente {
         }
 
     }
-public static Date getDateFecha1(String fecha) {
-    java.sql.Date f = null;
 
-    // Validar que la fecha no sea nula ni vacía
-    if (fecha != null && !fecha.isEmpty()) {
-        String[] cad = fecha.split("-");
-        try {
-            // Construir la fecha en formato yyyy-MM-dd
-            f = java.sql.Date.valueOf(cad[2] + "-" + getIntMesESP(cad[1]) + "-" + cad[0]);
-        } catch (Exception ex) {
-            System.out.println("Error: " + ex.getMessage());
-            Logger.getLogger(FechaComponente.class.getName()).log(Level.SEVERE, null, ex);
+    public static Date getDateFecha1(String fecha) {
+        java.sql.Date f = null;
+
+        // Validar que la fecha no sea nula ni vacía
+        if (fecha != null && !fecha.isEmpty()) {
+            String[] cad = fecha.split("-");
+            try {
+                // Construir la fecha en formato yyyy-MM-dd
+                f = java.sql.Date.valueOf(cad[2] + "-" + getIntMesESP(cad[1]) + "-" + cad[0]);
+            } catch (Exception ex) {
+                System.out.println("Error: " + ex.getMessage());
+                Logger.getLogger(FechaComponente.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
-    }
-    
-    return f;
-}
 
- public static String devuelvePathMsql(String cadena) {
+        return f;
+    }
+
+    public static String devuelvePathMsql(String cadena) {
         String c1 = "";
         for (int i = 0; i < cadena.length(); i++) {
             if (cadena.charAt(i) == '\\') {
@@ -316,6 +319,26 @@ public static Date getDateFecha1(String fecha) {
             }
         }
         return c1;
+    }
+
+    public static String validateEmail(String input) {
+        if (input == null || input.isEmpty()) {
+            return null;
+        }
+
+        // Eliminar espacios al inicio
+        String trimmedInput = input.stripLeading();
+
+        // Expresión regular para validar correo electrónico
+        String emailRegex = "^[\\w.-]+@[a-zA-Z\\d.-]+\\.[a-zA-Z]{2,6}$";
+        Pattern pattern = Pattern.compile(emailRegex);
+        Matcher matcher = pattern.matcher(trimmedInput);
+
+        if (matcher.matches()) {
+            return "Correo válido: " + trimmedInput;
+        } else {
+            return null;
+        }
     }
 
 }

@@ -11,11 +11,11 @@ import java.util.List;
 */
 public interface PersonaDAO {
 
-    void save(Persona obj);
+  boolean save(Persona obj);
 
-    void update(Persona obj);
+    boolean update(Persona obj);
 
-    void delete(String cedula);
+    boolean delete(String cedula);
 
     Persona getOne(String cedula);
 

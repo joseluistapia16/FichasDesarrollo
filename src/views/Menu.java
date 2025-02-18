@@ -256,4 +256,14 @@ public class Menu extends javax.swing.JDialog {
     private javax.swing.JMenuBar menu1;
     private javax.swing.JLabel tapiz;
     // End of variables declaration//GEN-END:variables
+
+    private static class GestionFichas {
+
+        public GestionFichas(JFrame jFrame, boolean b) {
+        }
+
+        private void setVisible(boolean b) {
+            throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+        }
+    }
 }
