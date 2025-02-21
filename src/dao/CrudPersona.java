@@ -45,7 +45,7 @@ public class CrudPersona implements PersonaDAO {
             st.setString(8, obj.getDireccion());
             st.setString(10, obj.getTelefono());
             st.setInt(11, obj.getId_grupo_sanguineo());
-            st.setInt(12, obj.getId_estado_civil());
+            st.setInt(12, obj.getId_area());
             st.setInt(13, obj.getId_area());
             st.setDate(14, obj.getFecha_registro());
             st.setString(15, obj.getEstado());
@@ -116,6 +116,7 @@ public class CrudPersona implements PersonaDAO {
                             rs.getInt("n_hijos"),
                             rs.getString("direccion"),
                             rs.getString("telefono"),
+                            rs.getString("telefono_emergencia"),
                             rs.getInt("id_grupo_sanguineo"),
                             rs.getInt("id_estado_civil"),
                             rs.getInt("id_area"),
@@ -126,7 +127,7 @@ public class CrudPersona implements PersonaDAO {
                 }
             }
         } catch (SQLException ex) {
-            Logger.getLogger(CrudArea.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(CrudPersona.class.getName()).log(Level.SEVERE, null, ex);
         }
         return obj;
     }

@@ -5,87 +5,72 @@
  */
 package domain;
 
-
-import java.util.Date;
+import java.sql.Date;
 import lombok.NoArgsConstructor;
 
 import lombok.Data;
 
 import lombok.ToString;
 
-import lombok.AllArgsConstructor;
 
+import lombok.NonNull;
+import lombok.RequiredArgsConstructor;
 
 @Data
 @NoArgsConstructor
 @ToString
-@AllArgsConstructor
+@RequiredArgsConstructor
+
 public class Persona {
+
     private String cedula;
+    @NonNull
     private String nombre;
+    @NonNull
     private String apellidos;
+    @NonNull
     private Date fecha_nacimiento;
-    private Integer  n_hijos;
+    @NonNull
+    private String lugar_nacimiento;  //cambio
+    @NonNull
+    private Integer n_hijos;
+    @NonNull
     private String direccion;
-    private Integer id_mail;
-    private String telefono; 
+    @NonNull
+    private String telefono;
+    @NonNull
+    private String telefono_emergencia;
+    @NonNull
     private Integer id_grupo_sanguineo;
+    @NonNull
+    private Integer id_estado_civil;
+    @NonNull
     private Integer id_area;
+    @NonNull
+    private String id_usuario;
+    @NonNull
+    private Date fecha_registro;  // cambio
+    @NonNull
     private String estado;
 
-    public Persona(String string, String string0, String string1, java.sql.Date date, String string2, int aInt, String string3, String string4, int aInt0, int aInt1, int aInt2, String string5, java.sql.Date date0, String string6) {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
+    public Persona(String cedula, String nombre, String apellidos, Date fecha_nacimiento, String lugar_nacimiento, Integer n_hijos, String direccion, String telefono, String telefono_emergencia, Integer id_grupo_sanguineo, Integer id_estado_civil, Integer id_area, String id_usuario, Date fecha_registro, String estado) {
+        this.cedula = cedula;
+        this.nombre = nombre;
+        this.apellidos = apellidos;
+        this.fecha_nacimiento = fecha_nacimiento;
+        this.lugar_nacimiento = lugar_nacimiento;
+        this.n_hijos = n_hijos;
+        this.direccion = direccion;
+        this.telefono = telefono;
+        this.telefono_emergencia = telefono_emergencia;
+        this.id_grupo_sanguineo = id_grupo_sanguineo;
+        this.id_estado_civil = id_estado_civil;
+        this.id_area = id_area;
+        this.id_usuario = id_usuario;
+        this.fecha_registro = fecha_registro;
+        this.estado = estado;
     }
+    
+    
 
-    public String getCedula() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getNombre() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getApellidos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public java.sql.Date getFecha_nacimiento() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getLugar_nacimiento() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public int getN_hijos() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getDireccion() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getTelefono() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public int getId_grupo_sanguineo() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public int getId_estado_civil() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public int getId_area() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public java.sql.Date getFecha_registro() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
-
-    public String getEstado() {
-        throw new UnsupportedOperationException("Not supported yet."); // Generated from nbfs://nbhost/SystemFileSystem/Templates/Classes/Code/GeneratedMethodBody
-    }
 }

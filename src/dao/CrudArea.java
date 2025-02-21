@@ -58,7 +58,7 @@ public class CrudArea implements AreaDAO {
                 Connection conect = this.conexion.conectar(base); PreparedStatement st = conect.prepareStatement(query); ResultSet rs = st.executeQuery()) {
 
             while (rs.next()) {
-                Area area = new Area(rs.getInt("id_area"), rs.getString("nombre"),
+                Area area = new Area(rs.getInt("id_area"), rs.getString("nombre_area"),
                         rs.getString("id_usuario"), rs.getString("estado"));
                 datos.add(area);
             }
