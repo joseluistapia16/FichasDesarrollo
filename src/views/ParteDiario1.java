@@ -3,7 +3,8 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JDialog.java to edit this template
  */
 package views;
-import javax.swing.JOptionPane; 
+
+import javax.swing.JOptionPane;
 import dao.CrudArea;
 import domain.Area;
 import dao.CrudPersona;
@@ -11,6 +12,7 @@ import domain.Persona;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
+
 
 /**
  *
@@ -20,11 +22,12 @@ public class ParteDiario1 extends javax.swing.JDialog {
 
     private List<Area> areas = null;
     private CrudArea crudA = null;
-    
-     private final CrudPersona crudP = null;
+
+    private final CrudPersona crudP = null;
 
     /**
      * Creates new form ParteDiario
+     *
      * @param parent
      * @param modal
      */
@@ -534,7 +537,7 @@ public class ParteDiario1 extends javax.swing.JDialog {
     }//GEN-LAST:event_PermisoKeyReleased
 
     private void cedulaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_cedulaKeyReleased
- if (cedula.getText().length() == 10) { // Verifica si la cédula tiene 10 dígitos
+        if (cedula.getText().length() == 10) { // Verifica si la cédula tiene 10 dígitos
             validarYCompletarCampos(); // Llama al método para validar y completar los campos
         }
 
@@ -560,42 +563,42 @@ public class ParteDiario1 extends javax.swing.JDialog {
         Observacion.setText(texto_corregido);    }//GEN-LAST:event_ObservacionKeyReleased
 
 
-      public void validarYCompletarCampos() {
-        String cedulaText = this.cedula.getText().trim(); // Obtiene la cédula ingresada
+public void validarYCompletarCampos() {
+        String cedulaText = this.cedula.getText().trim();
 
         if (cedulaText.isEmpty()) {
             JOptionPane.showMessageDialog(null, "Por favor, ingrese una cédula.");
             return;
         }
 
-        // Llama al método getOne para buscar la persona
-        CrudPersona crudP = new CrudPersona(); // Instancia de CrudPersona
-        Persona persona = crudP.getOne(cedulaText); // Busca la persona por cédula
+        Persona persona = crudP.getOne(cedulaText);
 
         if (persona != null) {
-            // Si se encontró una persona, completa los campos
             nombre.setText(persona.getNombre());
             apellidos.setText(persona.getApellidos());
 
-            // Ajusta el índice del ComboBox según el id_area
-            for (int i = 0; i < area.getItemCount(); i++) {
-                if (area.getItemAt(i).equals(persona.getId_area())) {
-                    area.setSelectedIndex(i);
+            int areaId = persona.getId_area(); // Assuming getId_area() returns an int
+            int index = -1;
+            for (int i = 0; i < areas.size(); i++) {
+                if (areas.get(i).getId_area() == areaId) {
+                    index = i + 1; // +1 because of "Elija una Opción..."
                     break;
                 }
             }
+
+            if (index != -1) {
+                area.setSelectedIndex(index);
+            } else {
+                area.setSelectedIndex(0); // Default to "Elija una Opción..."
+            }
         } else {
-            // Si no se encontró, muestra un mensaje de error
             JOptionPane.showMessageDialog(null, "No Encontrado.");
-            // Limpia los campos
             nombre.setText("");
             apellidos.setText("");
-            area.setSelectedIndex(0); // Vuelve al primer elemento del ComboBox
+            area.setSelectedIndex(0);
         }
     }
-
-  
-    /**
+ /**
      * @param args the command line arguments
      */
     public static void main(String args[]) {
